@@ -1,1 +1,15 @@
 // Mixins in here
+.btn-styles (@br, @w, @pt, @pb, @text-color, @bg-color, @text-size) {
+  border-radius: @br;
+  width: @w;
+  padding-top: @pt;
+  padding-bottom: @pb;
+  color:@text-color;
+  background-color: @bg-color;
+  font-size: @text-size;
+  cursor: pointer;
+}
+
+.btn {
+  .btn-styles(20px, 20rem, 9px, 8px, white, #2e9b87, 2rem) ;
+}
